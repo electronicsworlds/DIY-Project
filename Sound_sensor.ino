@@ -3,7 +3,6 @@ LCD_I2C lcd(0x27);   // Default address of most PCF8574 modules, change accordin
 int AudioPin = A0;   // Connect Your Analog Sound Sensor Module To This Pin
 int value;       // Variable to store the sensor input value
 void setup() {
-  Serial.begin(9600);
   lcd.begin(); 
   lcd.backlight();
   pinMode(AudioPin,INPUT);  // Set the pin to read from sensor
